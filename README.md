@@ -8,6 +8,10 @@
 - python3-bs4
 - requests
 
+## Screenshot
+
+![](https://github.com/ptc0219/2018_9in1_Voting_Dashboard/raw/master/screenshot.png)
+
 ## Author
 
 - Jimmy Pan (pantc12@gmail.com)
