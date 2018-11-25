@@ -2,6 +2,7 @@ import os, time, requests
 from bs4 import BeautifulSoup
 
 url = "http://vote.2018.nat.gov.tw/mobile/zh_TW/TC/63000000000000000.html"
+sleep = 10
 
 last_count = 0
 last_count_diff = 0
@@ -41,6 +42,6 @@ try:
         send = info_raw[1].split('/')
         info = [' '.join(info_raw[0:2]) + ' (' + str(int(send[1]) - int(send[0])) + ')', ' '.join(info_raw[2:])]
         [print(x) for x in info]
-        time.sleep(10)
+        time.sleep(sleep)
 except KeyboardInterrupt:
     print("Exit...")
