@@ -21,8 +21,8 @@ try:
 
         for row in rows:
             cols = row.find_all('td')
-            cols = [ele.text for ele in cols]
-            data.append([ele for ele in cols])
+            cols = [col.text for col in cols]
+            data.append([col for col in cols])
 
         ding = [data[1][2], data[1][4].replace(',', '')]
         kp  =  [data[3][2], data[3][4].replace(',', '')]
