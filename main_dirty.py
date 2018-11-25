@@ -19,11 +19,11 @@ while(True):
     rows = table_body.find_all('tr')
     for row in rows:
         cols = row.find_all('td')
-        cols = [ele.text.strip() for ele in cols]
+        cols = [ele.text for ele in cols]
         data.append([ele for ele in cols if ele])
 
-    ding = [data[1][1], data[1][3].replace(',', '')]
-    kp  =  [data[3][1], data[3][3].replace(',', '')]
+    ding = [data[1][2], data[1][4].replace(',', '')]
+    kp  =  [data[3][2], data[3][4].replace(',', '')]
 
     print(': '.join(ding))
     print(': '.join(kp))
